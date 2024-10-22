@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-body{
+body {
     font-family: "Inter", sans-serif;
 }
 
@@ -11,44 +11,54 @@ body{
     padding: 0;
 }
 
+.body-area {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
 .container {
     width: 90%;
     margin: 5rem auto;
     border-radius: 1rem;
 }
-.navbar{
+
+.navbar {
     max-width: 80%;
     margin: 60px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 
 }
-.navbar ul{
+
+.navbar ul {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
     gap: 2rem;
 
 }
-.nav-items{
+
+.nav-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
     /* gap: 3rem; */
-        /* margin-right: 1rem; */
+    /* margin-right: 1rem; */
 }
-.bg-color{
+
+.bg-color {
     color: rgb(230, 83, 60);
     /* background-color: rgb(230, 83, 60); */
 }
-.btn{
-        list-style-type: none;
-    width: 52px;
-    height: 22px;
+
+.btn {
+    list-style-type: none;
+    /* width: 52px;
+    height: 22px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,4 +69,109 @@ body{
     border: 1px solid rgb(230, 83, 60);
     border-radius: 45px;
     font-weight: 600;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    gap: 3rem;
+}
+
+.banner-title {
+    width: 60%;
+    border: solid 1px rgb(107, 26, 173);
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.banner-img {
+
+    border: solid 4px rgb(30, 164, 66);
+
+    /* position: absolute; */
+    /* width: 100%; */
+    /* max-width: 0 auto; */
+
+
+    /* position: relative; */
+    /* top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    transform: translate(-50%, -50%); */
+}
+.banner-img img {
+    /* width: 349px;
+    height: 580px; */
+    width: auto;
+    height: fit-content;
+}
+
+.btn-banner {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-app {
+    border-radius: 45px;
+    padding: 0.5rem 1.25rem;
+    background-color: rgba(18, 17, 17, 0.973);
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.banner-right {
+    /* max-width: 0 auto; */
+    width: 40%;
+    border: solid 5px red;
+    position: relative;
+}
+
+.banner-card1 {
+    position: absolute;
+    /* width: 193px;
+height: 98px; */
+    /* left: 1107px;
+top: 260px; */
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+
+    top: 50%;
+    left: 80%;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transform: translate(-50%, -80%);
+
+}
+
+.banner-card2 {
+    position: absolute;
+    /* width: 206px;
+height: 96px;
+left: 764px;
+top: 556px;    */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+
+    top: 60%;
+    right: 30%;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+
+}
+
+.banner-card2 p, .banner-card1 p {
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 1rem;
+    font-weight: 400;
 }
