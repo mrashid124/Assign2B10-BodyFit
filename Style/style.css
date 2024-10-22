@@ -230,10 +230,51 @@ top: 556px;    */
     margin-top: 48px;
     display: flex;
     gap: 4rem;
-    background: rgb(34, 34, 34);;
+    background: rgb(34, 34, 34);
+    ;
 
 }
+
 .run-miles img {
     width: 366px;
     height: 312px;
+}
+
+/* Meet Our Team */
+.our-team {
+    width: 1060px;
+    height: 782px;
+}
+
+.our-team img {
+    width: 100%;
+    height: 300px;
+    filter: brightness(70%);
+}
+
+.team-images {
+    width: 1060px;
+    height: 604px;
+}
+
+.row-1,
+.row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+.team-card {
+    position: relative;
+}
+
+.team-member {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
 }
